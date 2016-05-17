@@ -27,11 +27,12 @@ function getPlayerMove(move) {
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
     /* return Your Expression */
 
-    if (move === rock || paper || scissors)
+    var move;
+    if (move === "rock" || "paper" || "scissors")
     {
         return move;
     }
-    else if (move != (rock || paper || scissors))
+    else if (move != ("rock" || "paper" || "scissors"))
     {
         return getInput();
     }
@@ -44,11 +45,11 @@ function getComputerMove(move) {
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
     /* return Your Expression */
 
-    if (move === rock || paper || scissors)
+    if (move === "rock" || "paper" || "scissors")
     {
         return move;
     }
-    else if (move != (rock || paper || scissors))
+    else if (move != ("rock" || "paper" || "scissors"))
     {
         return randomPlay();
     }
